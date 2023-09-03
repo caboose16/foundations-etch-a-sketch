@@ -11,8 +11,9 @@ function deleteBoard() {
 }
 
 function calculateEtchSquareSize(rows) {
+    const border = 2;
     const maxWidth = 960;
-    let size = Math.floor(maxWidth / rows);
+    let size = Math.floor(maxWidth / rows) - border;
 
     return size;
 }
