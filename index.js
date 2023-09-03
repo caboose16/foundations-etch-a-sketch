@@ -43,13 +43,13 @@ function generateCleanBoard(rows, cols){
 }
 
 function newBoard() {
-    let rows = prompt("Please enter the number of rows for the board");
+    let rows = prompt("Number of rows (1-100)");
     if (rows === null) return;
     if (isNaN(rows) || rows < 1 || rows > 100) {
         window.alert("Invalid input for rows. Please enter a number from 1-100");
     }
 
-    let cols = prompt("Please enter the number of columns for the board");
+    let cols = prompt("Number of cols (1-100)");
     if (cols === null) return;
     if (isNaN(cols) || cols < 1 || cols > 100) {
         window.alert("Invalid input for cols. Please enter a number from 1-100");
