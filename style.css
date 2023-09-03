@@ -1,3 +1,7 @@
+body {
+    background: #F44336;
+}
+
 #game {
     display: flex;
     flex-direction: column;
@@ -16,6 +20,7 @@
 
 .etch-square {
     border: 1px solid black;
+    background: white;
 }
 
 .etch-square-covered {
