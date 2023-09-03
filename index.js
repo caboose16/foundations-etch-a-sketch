@@ -10,9 +10,17 @@ function deleteBoard() {
     }
 }
 
+function calculateEtchSquareSize(rows) {
+    const maxWidth = 960;
+    let size = Math.floor(maxWidth / rows);
+
+    return size;
+}
+
 function generateCleanBoard(rows, cols){
     rows ??= 16;
     cols ??= 16;
+    let squareSideLength = calculateEtchSquareSize(rows, cols) + "px";
 
     deleteBoard();
 
@@ -23,6 +31,8 @@ function generateCleanBoard(rows, cols){
         for (let i = 0; i < cols; i++) {
             let div = document.createElement("div");
             div.classList.add("etch-square");
+            div.style.height = squareSideLength;
+            div.style.width = squareSideLength;
             div.addEventListener("mouseover", coverEtchSquare);
             rowDiv.appendChild(div);
         }
