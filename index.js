@@ -49,7 +49,7 @@ function newBoard() {
         window.alert("Invalid input for rows. Please enter a number from 1-100");
     }
 
-    let cols = prompt("Number of cols (1-100)");
+    let cols = prompt("Number of columns (1-100)");
     if (cols === null) return;
     if (isNaN(cols) || cols < 1 || cols > 100) {
         window.alert("Invalid input for cols. Please enter a number from 1-100");
