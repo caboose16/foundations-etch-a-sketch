@@ -28,5 +28,15 @@ body {
 }
 
 .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 25px 0;
+    width: 976px;
+}
+
+button {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
 }
