@@ -57,4 +57,9 @@ function newBoard() {
     generateCleanBoard(rows, cols);
 }
 
+function resetBoard() {
+    let etchSquares = document.querySelectorAll(".etch-square");
+    etchSquares.forEach( (n) => n.classList.remove("etch-square-covered"));
+}
+
 generateCleanBoard();
